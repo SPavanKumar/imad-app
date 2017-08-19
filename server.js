@@ -14,13 +14,6 @@ app.get('/', function (req, res) {
     
 });
 
-app.get('/pavan1', function (req, res) {
-   res.send('Hello...Harika...This is Pavan... now remove pavan in url and add harika') ;
-});
-
-app.get('/harika', function (req, res) {
-   res.send('Harika do not give up untill you reach what you want to creat'); 
-});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });

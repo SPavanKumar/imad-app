@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(_dirname, 'ui', 'pavan.html'));
+   res.sendFile(path.join(__dirname, 'ui', 'pavan.html'));
     
 });
 

@@ -1,0 +1,33 @@
+var express = require('express');
+var morgan =  require('morgan');
+var path =require('path');
+
+var app = express();
+app.use(morgan('combined'));
+
+app.get('/',function (req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/ui/style.css',function (req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/modi.png',function (req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'modi.png'));
+});
+
+
+
+
+
+
+
+
+
+
+
+var port = 80;
+app.listen(port, function(){ 
+    console.log(`I MAD course app listening on port S{port}!`);
+});

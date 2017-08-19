@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
     
 });
 
-app.get('/pavan', function (req, res) {
+app.get('/pavan1', function (req, res) {
    res.send('Hello...Harika...This is Pavan... now remove pavan in url and add harika') ;
 });
 

@@ -9,6 +9,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/', function (req, res) {
+    res.sendFile(path.join(_dirname, 'ui', 'pavan.html'));
+    
+});
+
 app.get('/pavan', function (req, res) {
    res.send('Hello...Harika...This is Pavan... now remove pavan in url and add harika') ;
 });

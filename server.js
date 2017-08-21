@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var Projects = {
-         'pro-1' :{  
+         'pro-one' :{  
             title: 'ProRss',
             heading: 'Mobile app',
             date : 'aug12,15',

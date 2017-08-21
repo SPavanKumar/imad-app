@@ -99,7 +99,7 @@ app.get('/ui/madi.png',function (req, res) {
 });
 
 app.get('/:projectName',function (req, res) {
-    var projectName = rec.params.projectName; 
+    var projectName = req.params.projectName; 
     res.send(createTemplate(Projects[projectName]));
     
 });

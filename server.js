@@ -9,7 +9,7 @@ var Projects = {
          'pro-1' :{  
             title: 'ProRss',
             heading: 'Fruits RSS',
-            subheading:'Mobile app'
+            subheading:'Mobile app',
             date : 'aug12,15',
             content: `
                 <p>Hi this is Pavan. I am going to create a mobile app.</p>
@@ -23,7 +23,7 @@ var Projects = {
          'pro-2' :{
                 title: 'Pedhabala Shiksha',
                 heading: 'Pedhabala Shiksha',
-                subheading:'Mobile app'
+                subheading:'Mobile app',
                 date : 'aug15,16',
                 content: `
                 
@@ -38,7 +38,7 @@ var Projects = {
          'pro-3' :{
                     title: 'Help in 360',
                     heading: 'Help in 360',
-                    subheading:'Mobile app'
+                    subheading:'Mobile app',
                     date : 'Jan 26,17',
                     content: `
                     

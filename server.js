@@ -31,5 +31,5 @@ app.get('/pavan',function (req, res) {
 
 var port = 80;
 app.listen(port, function(){ 
-    console.log(`I MAD course app listening on port S{port}!`);
+    console.log(`I MAD course app listening on port ${port}!`);
 });

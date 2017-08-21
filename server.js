@@ -79,8 +79,8 @@ function createTemplate(data) {
                             <div>
                                 <a href="/">Home</a>
                                 <a href="/pro-1">pro1</a>
-                                <a href="/pro-2">pro1</a>
-                                <a href="/pro-3">pro1</a>
+                                <a href="/pro-2">pro2</a>
+                                <a href="/pro-3">pro3</a>
                             </div> 
                             <hr/>
                             <div>${date}</div>

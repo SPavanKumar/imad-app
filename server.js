@@ -5,20 +5,51 @@ var path =require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var Pro1 = { 
-    title: 'ProRss',
-    heading: 'Mobile app',
-    date : 'aug12,15',
-    content: `<p> This is my first html file.I am learnig html in this course. Click on "home".</p>
+var Projects = {
+         'Pro1' :{  
+            title: 'ProRss',
+            heading: 'Mobile app',
+            date : 'aug12,15',
+            content: `
+                <p>Hi this is Pavan. I am going to create a mobile app.</p>
+                <p>
+                    This app will be useful for people in buying Fruites. This project is given by RSS. Feeling proud to work for RSS.
+                </p>
+                 <p> I have a brilliant girl in my Team named Harika. She can complete sudoku in easy level in 1.20 sec. and hard level 10 to 11 min.
+                </p> `
+             
+         },
+         'Pro2' :{
+                title: 'Pedhabala Shiksha',
+                heading: 'Mobile app',
+                date : 'aug15,16',
+                content: `
+                
+                    <p>Hi this is Pavan. I am going to create my 2nd mobile app.</p>
+                    <p>
+                        This app will be useful for Telugu Loving People. This project is given by Anjani Kumar. Feeling proud to work for Telugu Language.
+                    </p>
+                    <p> 
+                        I have a brilliant girl in my Team named Harika.  Who recently deleted what's up app and wanted to create new messanger. She did not give party till now. There are so many parties to be given.
+                    </p> `
+            },
+         'Pro3' :{
+                    title: 'Help in 360',
+                    heading: 'Web app',
+                    date : 'Jan 26,17',
+                    content: `
+                    
+                        <p>Hi this is Pavan. I am going to create my 1st web app.</p>
+                        <p>
+                            This app will be useful for every person who are in need of anything. Mostly children and young students and patients. Feeling proud to help others in 360 angles.
+                        </p>
+                        <p> 
+                            I have a brilliant girl in my Team named Harika.  Who has diffrent thoughts to help others and change our country position. She has lot of plans to be implemented to change our country's bad situations.
+                        </p> `
+         }
         
-        <p>Hi this is Pavan. I am going to create a mobile app.</p>
-        <p>
-            This app will be useful for people in buying Fruites. This project is given by RSS. Feeling proud to work for RSS.
-        </p>
-         <p> I have a brilliant girl in my Team named Harika. She can complete sudoku in easy level in 1.20 sec. and hard level 10 to 11 min.
-        </p> `
-};
+            
+        };
   
 function createTemplate(data) {
     var title = data.title;
@@ -67,8 +98,10 @@ app.get('/ui/madi.png',function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/pavan',function (req, res) {
-    res.send(createTemplate(Pro1));
+app.get('/:ProjectsName',function (req, res) {
+    var ProjectsName = rec.params.ProjectsName; 
+    res.send(createTemplate(Projects[ProjectsName]));
+    
 });
 
 

@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var Projects = {
          'pro-1' :{  
             title: 'ProRss',
-            heading: 'Fruits RSS',
+            heading: '1.Fruits RSS',
             subheading:'Mobile app',
             date : 'aug12,15',
             content: `
@@ -22,7 +22,7 @@ var Projects = {
          },
          'pro-2' :{
                 title: 'Pedhabala Shiksha',
-                heading: 'Pedhabala Shiksha',
+                heading: '2.Pedhabala Shiksha',
                 subheading:'Mobile app',
                 date : 'aug15,16',
                 content: `
@@ -37,7 +37,7 @@ var Projects = {
             },
          'pro-3' :{
                     title: 'Help in 360',
-                    heading: 'Help in 360',
+                    heading: '3.Help in 360',
                     subheading:'Web app',
                     date : 'Jan 26,17',
                     content: `

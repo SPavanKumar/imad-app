@@ -98,9 +98,9 @@ app.get('/ui/madi.png',function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/:ProjectsName',function (req, res) {
-    var ProjectsName = rec.params.ProjectsName; 
-    res.send(createTemplate(Projects[ProjectsName]));
+app.get('/:ProjectName',function (req, res) {
+    var ProjectName = rec.params.ProjectName; 
+    res.send(createTemplate(Projects[ProjectName]));
     
 });
 

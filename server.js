@@ -38,7 +38,7 @@ var Projects = {
          'pro-3' :{
                     title: 'Help in 360',
                     heading: 'Help in 360',
-                    subheading:'Mobile app',
+                    subheading:'Web app',
                     date : 'Jan 26,17',
                     content: `
                     
@@ -75,7 +75,7 @@ function createTemplate(data) {
                             
                           <div class=abc>
                             <h1>${heading}</h1>   
-                            <h5>${subheading}</h5>
+                            <h3>${subheading}</h3>
                             <div>
                                 <a href="/">Home</a>
                             </div> 

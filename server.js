@@ -17,8 +17,14 @@ var Pro1 = {
               <p> The app will be very useful for fruite marketing and people well get fruites just with one tap</p>
               <p> Happy to get this work and feeling proud to serve RSS.</p>`
 };
-
-var htmlTemplat = ` <!DOCTYPE html>
+  
+function createTemplate(data) {
+    var title = data.title;
+    var heading = data.heading;
+    var date = data.date;
+    var content = data.content;
+    
+    var htmlTemplat = ` <!DOCTYPE html>
                     <html>
                     <head>
                         
@@ -42,9 +48,9 @@ var htmlTemplat = ` <!DOCTYPE html>
                        </div>
                     </body>
                     </html>
- 
-`;
-    
+                    `;
+                    return htmlTemplate;
+}    
 app.get('/ui/style.css',function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -54,7 +60,7 @@ app.get('/ui/madi.png',function (req, res) {
 });
 
 app.get('/pavan',function (req, res) {
-    res.sendFile(path.join(__dirname, 'ui','pavan.html'));
+    res.send(createTemplate(Pro1));
 });
 
 

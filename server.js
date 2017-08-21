@@ -8,7 +8,8 @@ app.use(morgan('combined'));
 var Projects = {
          'pro-1' :{  
             title: 'ProRss',
-            heading: 'Mobile app',
+            heading: 'Fruits RSS',
+            subheading:'Mobile app'
             date : 'aug12,15',
             content: `
                 <p>Hi this is Pavan. I am going to create a mobile app.</p>
@@ -21,7 +22,8 @@ var Projects = {
          },
          'pro-2' :{
                 title: 'Pedhabala Shiksha',
-                heading: 'Mobile app',
+                heading: 'Pedhabala Shiksha',
+                subheading:'Mobile app'
                 date : 'aug15,16',
                 content: `
                 
@@ -35,7 +37,8 @@ var Projects = {
             },
          'pro-3' :{
                     title: 'Help in 360',
-                    heading: 'Web app',
+                    heading: 'Help in 360',
+                    subheading:'Mobile app'
                     date : 'Jan 26,17',
                     content: `
                     
@@ -54,6 +57,7 @@ var Projects = {
 function createTemplate(data) {
     var title = data.title;
     var heading = data.heading;
+    var subheading = data.subheading;
     var date = data.date;
     var content = data.content;
     
@@ -70,7 +74,8 @@ function createTemplate(data) {
                         <body>
                             
                           <div class=abc>
-                            <h1>${heading}</h1>    
+                            <h1>${heading}</h1>   
+                            <h5>${subheading}</h5>
                             <div>
                                 <a href="/">Home</a>
                             </div> 

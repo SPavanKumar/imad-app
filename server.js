@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var Projects = {
-         'Pro-one' :{  
+         'pro-one' :{  
             title: 'ProRss',
             heading: 'Mobile app',
             date : 'aug12,15',
@@ -19,7 +19,7 @@ var Projects = {
                 </p> `
              
          },
-         'Pro-two' :{
+         'pro-two' :{
                 title: 'Pedhabala Shiksha',
                 heading: 'Mobile app',
                 date : 'aug15,16',
@@ -33,7 +33,7 @@ var Projects = {
                         I have a brilliant girl in my Team named Harika.  Who recently deleted what's up app and wanted to create new messanger. She did not give party till now. There are so many parties to be given.
                     </p> `
             },
-         'Pro-three' :{
+         'pro-three' :{
                     title: 'Help in 360',
                     heading: 'Web app',
                     date : 'Jan 26,17',
@@ -98,9 +98,9 @@ app.get('/ui/madi.png',function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/:ProjectName',function (req, res) {
-    var ProjectName = rec.params.ProjectName; 
-    res.send(createTemplate(Projects[ProjectName]));
+app.get('/:projectName',function (req, res) {
+    var projectName = rec.params.projectName; 
+    res.send(createTemplate(Projects[projectName]));
     
 });
 

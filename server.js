@@ -78,6 +78,7 @@ function createTemplate(data) {
                             <h3>${subheading}</h3>
                             <div>
                                 <a href="/">Home</a>
+                                <a href="/pro-1">pro1</a>
                             </div> 
                             <hr/>
                             <div>${date}</div>

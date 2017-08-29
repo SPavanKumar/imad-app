@@ -8,7 +8,7 @@ var img = document.getElementById("madi");
 
 var marginLeft = 0;
 function moveRight() {
-    moveLeft= moveLeft + 10;
+    marginLeft= marginLeft + 10;
     img.sytle.marginLeft = marginLeft + 'px';  
 }
 img.onclick = function() {

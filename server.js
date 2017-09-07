@@ -11,6 +11,7 @@ var Projects = {
             heading: '1.Fruits RSS',
             subheading:'Mobile app',
             date : 'aug12,15',
+            
             content: `
                 <p>Hi this is Pavan. I am going to create a mobile app.</p>
                 <p>
@@ -143,6 +144,7 @@ app.get('/:projectName',function (req, res) {
 
 
 
+            
 
 
 

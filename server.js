@@ -121,6 +121,14 @@ app.get('/submit-name', function (req, res) {
     
 });
 
+var names = [];
+app.get('/pro-1', function (req, res) {
+    
+    var name = req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+    
+});
 
 
 app.get('/ui/style.css',function (req, res) {

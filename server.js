@@ -104,6 +104,15 @@ app.get('/counter', function(req, res) {
     res.send(counter.toString());
 });
 
+var names = [];
+app.get('/submit-name/:name', function (req, res) {
+    
+    var name = req.params.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+    
+});
+
 
 
 app.get('/ui/style.css',function (req, res) {
@@ -121,15 +130,6 @@ app.get('/ui/madi.png',function (req, res) {
 app.get('/:projectName',function (req, res) {
     var projectName = req.params.projectName; 
     res.send(createTemplate(Projects[projectName]));
-    
-});
-
-var names = [];
-app.get('/submit-name/:name', function (req, res) {
-    
-    var name = req.params.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
     
 });
 

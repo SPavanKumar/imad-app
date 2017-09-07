@@ -121,15 +121,6 @@ app.get('/submit-name', function (req, res) {
     
 });
 
-var nnames = [];
-app.get('/pro-1', function (req, res) {
-    
-    var name = req.query.name;
-    nnames.push(name);
-    res.send(JSON.stringify(nnames));
-    
-});
-
 
 app.get('/ui/style.css',function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'style.css'));

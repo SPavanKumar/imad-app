@@ -88,6 +88,13 @@ function createTemplate(data) {
                               ${content}
                             </div>
                            </div>
+                           
+                              <input type="text" id= "name" placeholder = "name"></input>
+                              <input type="submit" value = "submit" id="sub_bt"></input>
+          
+            <ul id="namelist">
+                
+            </ul>
                         </body>
                         </html>
                         `;

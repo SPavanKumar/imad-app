@@ -121,14 +121,15 @@ app.get('/submit-name', function (req, res) {
     
 });
 
-var prnames = [];
+var pnames = [];
 app.get('/project-name:prname',function (req, res) {
     
-    var prname = req.params.prname; 
-    prnames.push(prname);
-    res.send(JSON.stringify(prnames));
+    var pname = req.params.pname; 
+    pnames.push(pname);
+    res.send(JSON.stringify(pnames));
     
-});    
+});  
+
 app.get('/ui/style.css',function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });

@@ -122,9 +122,9 @@ app.get('/submit-name', function (req, res) {
 });
 
 var pnames = [];
-app.get('/project:pname',function (req, res) {
+app.get('/project-name',function (req, res) {
     
-    var pname = req.params.pname; 
+    var pname = req.query.pname; 
     pnames.push(pname);
     res.send(JSON.stringify(pnames));
     

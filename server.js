@@ -115,6 +115,15 @@ app.get('/counter', function(req, res) {
     res.send(counter.toString());
 });
 
+var pnames = [];
+app.get('/project-name',function (req, res) {
+    
+    var pname = req.query.pname; 
+    pnames.push(pname);
+    res.send(JSON.stringify(pnames));
+    
+});  
+
 var names = [];
 app.get('/submit-name', function (req, res) {
     
@@ -124,14 +133,6 @@ app.get('/submit-name', function (req, res) {
     
 });
 
-var pnames = [];
-app.get('/project-name',function (req, res) {
-    
-    var pname = req.query.pname; 
-    pnames.push(pname);
-    res.send(JSON.stringify(pnames));
-    
-});  
 
 app.get('/ui/style.css',function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'style.css'));

@@ -59,38 +59,7 @@ submit.onclick = function () {
      request.open('GET', 'http://kumarpavan284.imad.hasura-app.io/submit-name?name='+ name,true);
      request.send(null); 
     
-    
-    // Project name
 
-var psubmit = document.getElementById('s_t');
-psubmit.onclick = function () {
-      //create a request variable
-    
-    var request = new XMLHttpRequest();
-    
-    //capture a request and store it in a variable.
-    request.onreadystatechange = function () {
-      if(request.readyState === XMLHttpRequest.DONE) {
-         // Take some action
-         if(request.status===200) {
-              var pnames = request.responseText;
-              pnames = JSON.parse(pnames);
-                var plist = '';
-                for (var i=0; i<pnames.length;i++) {
-                 plist+= '<li>'+pnames[i] + '</li>';
-                 }
-   var ul=document.getElementById('pnamelist');
-   ul.innerHTML = plist;
-         }  
-      }
-      
-    };
-     
-     //make the request
-     var pnameInput = document.getElementById('pname');
-     var pname = pnameInput.value;
-     request.open('GET', 'http://kumarpavan284.imad.hasura-app.io/project-name?pname='+ pname,true);
-     request.send(null); 
 
  
  

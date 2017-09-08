@@ -122,7 +122,7 @@ app.get('/submit-name', function (req, res) {
 });
 
 var pnames = [];
-app.get('/project-name:prname',function (req, res) {
+app.get('/project-name:pname',function (req, res) {
     
     var pname = req.params.pname; 
     pnames.push(pname);

@@ -66,21 +66,21 @@ submit.onclick = function () {
 psubmit.onclick = function () {
       //create a request variable
     
-    var request = new XMLHttpRequest();
+    var prequest = new XMLHttpRequest();
     
     //capture a request and store it in a variable.
-    request.onreadystatechange = function () {
-      if(request.readyState === XMLHttpRequest.DONE) {
+    prequest.onreadystatechange = function () {
+      if(prequest.readyState === XMLHttpRequest.DONE) {
          // Take some action
-         if(request.status===200) {
-              var names = request.responseText;
-              names = JSON.parse(names);
-                var list = '';
-                for (var i=0; i<names.length;i++) {
-                 list+= '<li>'+names[i] + '</li>';
+         if(prequest.status===200) {
+              var pnames = prequest.responseText;
+              pnames = JSON.parse(pnames);
+                var plist = '';
+                for (var i=0; i<pnames.length;i++) {
+                 plist+= '<li>'+pnames[i] + '</li>';
                  }
    var ul=document.getElementById('pnamelist');
-   ul.innerHTML = list;
+   ul.innerHTML = plist;
          }  
       }
       

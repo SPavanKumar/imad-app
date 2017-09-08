@@ -90,8 +90,8 @@ function createTemplate(data) {
                             </div>
                            </div>
                            
-                              <input type="text" id= "name" placeholder = "name"></input>
-                              <input type="submit" value = "submit" id="sub_bt"></input>
+                              <input type="text" id= "pname" placeholder = "pname"></input>
+                              <input type="submit" value = "submit" id="s_t"></input>
           
             <ul id="namelist">
                 

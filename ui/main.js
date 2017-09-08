@@ -75,12 +75,12 @@ psubmit.onclick = function () {
          if(request.status===200) {
               var pnames = request.responseText;
               pnames = JSON.parse(pnames);
-                var list = '';
+                var plist = '';
                 for (var i=0; i<pnames.length;i++) {
-                 list+= '<li>'+pnames[i] + '</li>';
+                 plist+= '<li>'+pnames[i] + '</li>';
                  }
    var ul=document.getElementById('pnamelist');
-   ul.innerHTML = list;
+   ul.innerHTML = plist;
          }  
       }
       

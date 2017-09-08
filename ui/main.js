@@ -79,7 +79,7 @@ psubmit.onclick = function () {
                 for (var i=0; i<pnames.length;i++) {
                  list+= '<li>'+pnames[i] + '</li>';
                  }
-   var ul=document.getElementById('namelist');
+   var ul=document.getElementById('pnamelist');
    ul.innerHTML = list;
          }  
       }

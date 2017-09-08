@@ -62,7 +62,7 @@ submit.onclick = function () {
 
 // Submit name
 
-/*var psubmit = document.getElementById('s_t');
+var psubmit = document.getElementById('s_t');
 psubmit.onclick = function () {
       //create a request variable
     
@@ -90,7 +90,7 @@ psubmit.onclick = function () {
      var pnameInput = document.getElementById('pname');
      var pname = pnameInput.value;
      request.open('GET', 'http://kumarpavan284.imad.hasura-app.io/project-name?pname='+ pname,true);
-     request.send(null); */
+     request.send(null); 
     
 
  

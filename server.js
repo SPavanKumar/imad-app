@@ -122,8 +122,10 @@ app.get('/submit-name', function (req, res) {
 });
 
 var prnames = [];
-app.get('/projectName',function (req, res) {
+app.get('/project-name',function (req, res) {
+    
     var prname = req.qurey.prname; 
+    prnames.push(prname);
     res.send(JSON.stringify(prnames));
     
 });    

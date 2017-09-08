@@ -62,8 +62,8 @@ submit.onclick = function () {
 
 // Submit name
 
-var submit = document.getElementById('sub_bt');
-submit.onclick = function () {
+var psubmit = document.getElementById('s_t');
+psubmit.onclick = function () {
       //create a request variable
     
     var request = new XMLHttpRequest();
@@ -79,7 +79,7 @@ submit.onclick = function () {
                 for (var i=0; i<names.length;i++) {
                  list+= '<li>'+names[i] + '</li>';
                  }
-   var ul=document.getElementById('namelist');
+   var ul=document.getElementById('pnamelist');
    ul.innerHTML = list;
          }  
       }
@@ -87,9 +87,9 @@ submit.onclick = function () {
     };
      
      //make the request
-     var nameInput = document.getElementById('name');
-     var name = nameInput.value;
-     request.open('GET', 'http://kumarpavan284.imad.hasura-app.io/submit-name?name='+ name,true);
+     var pnameInput = document.getElementById('pname');
+     var pname = pnameInput.value;
+     request.open('GET', 'http://kumarpavan284.imad.hasura-app.io/project-name?pname='+ pname,true);
      request.send(null); 
     
 

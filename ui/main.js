@@ -87,7 +87,7 @@ psubmit.onclick = function () {
     };
      
      //make the request
-     var pnameInput = document.getElementById('name');
+     var pnameInput = document.getElementById('pname');
      var pname = pnameInput.value;
      request.open('GET', 'http://kumarpavan284.imad.hasura-app.io/project-name?pname='+ pname,true);
      request.send(null); 

@@ -121,7 +121,12 @@ app.get('/submit-name', function (req, res) {
     
 });
 
-
+var prnames = [];
+app.get('/projectName',function (req, res) {
+    var prname = req.qurey.projectName; 
+    res.send(JSON.stringify(prnames));
+    
+});    
 app.get('/ui/style.css',function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });

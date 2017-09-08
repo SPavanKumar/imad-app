@@ -93,7 +93,7 @@ function createTemplate(data) {
                               <input type="text" id= "pname" placeholder = "pname"></input>
                               <input type="submit" value = "submit" id="s_t"></input>
           
-            <ul id="namelist">
+            <ul id="pnamelist">
                 
             </ul>
                         </body>

@@ -18,7 +18,15 @@ var Projects = {
                     This app will be useful for people in buying Fruites. This project is given by RSS. Feeling proud to work for RSS.
                 </p>
                  <p> I have a brilliant girl in my Team named Harika. She can complete sudoku in easy level in 1.20 sec. and hard level 10 to 11 min.
-                </p> `
+                </p> 
+                
+                     <input type="text" id= "pname" placeholder = "pname"></input>
+                              <input type="submit" value = "submit" id="s_t"></input>
+          
+            <ul id="pnamelist">
+                
+            </ul>
+                `
              
          },
          'pro-2' :{
@@ -90,12 +98,7 @@ function createTemplate(data) {
                             </div>
                            </div>
                            
-                              <input type="text" id= "pname" placeholder = "pname"></input>
-                              <input type="submit" value = "submit" id="s_t"></input>
-          
-            <ul id="pnamelist">
-                
-            </ul>
+                              
                         </body>
                         </html>
                         `;

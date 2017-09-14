@@ -120,15 +120,15 @@ function createTemplate(data) {
 
 app.get('Projects/:projectName',function (req, res) {
   
-    pool.query("SELECT * FROM project WHERE title = '" + req.params.projectName + "'",  function (err, result) {
+    pool.query("SELECT * FROM project WHERE title = '" + req.params.ProjectName + "'",  function (err, result) {
         if (err) {
             res.status(500).send(err.toString());
         } else {
             if (result.rows.length === 0) {
                 res.status(404).send('project not found');
             }  else {
-                var projectData = result.rows[0];
-                res.send(createTemplate(projectData));
+                var ProjectData = result.rows[0];
+                res.send(createTemplate(ProjectData));
             }
         }  
         

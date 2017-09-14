@@ -15,7 +15,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var Projects = {
-         'pro-1' :{  
+         'project-one' :{  
             title: 'ProRss',
             heading: '1.Fruits RSS',
             subheading:'Mobile app',
@@ -38,7 +38,7 @@ var Projects = {
                 `
              
          },
-         'pro-2' :{
+         'project-two' :{
                 title: 'Pedhabala Shiksha',
                 heading: '2.Pedhabala Shiksha',
                 subheading:'Mobile app',
@@ -53,7 +53,7 @@ var Projects = {
                         I have a brilliant girl in my Team named Harika.  Who recently deleted what's up app and wanted to create new messanger. She did not give party till now. There are so many parties to be given.
                     </p> `
             },
-         'pro-3' :{
+         'project-three' :{
                     title: 'Help in 360',
                     heading: '3.Help in 360',
                     subheading:'Web app',

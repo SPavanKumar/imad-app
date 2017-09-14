@@ -120,7 +120,7 @@ function createTemplate(data) {
 
 app.get('projects/:projectName',function (req, res) {
   
-    pool.query("SELECT * FROM project WHERE title = '" + req.params.projectName+"'",  function (err, result) {
+    pool.query("SELECT * FROM project WHERE title = '" + req.params.projectName + "'",  function (err, result) {
         if (err) {
             res.status(500).send(err.toString());
         } else {

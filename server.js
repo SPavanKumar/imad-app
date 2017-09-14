@@ -14,7 +14,7 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var Projects = {
+var projects = {
          'project-one' :{  
             title: 'project-one',
             heading: '1.Fruits RSS',
@@ -118,17 +118,17 @@ function createTemplate(data) {
 
 
 
-app.get('/Projects/:projectName',function (req, res) {
+app.get('/projects/:projectName',function (req, res) {
   
-    pool.query("SELECT * FROM project WHERE title = '" + req.params.ProjectName + "'",  function (err, result) {
+    pool.query("SELECT * FROM project WHERE title = '" + req.params.projectName + "'",  function (err, result) {
         if (err) {
             res.status(500).send(err.toString());
         } else {
             if (result.rows.length === 0) {
                 res.status(404).send('project not found');
             }  else {
-                var ProjectData = result.rows[0];
-                res.send(createTemplate(ProjectData));
+                var projectData = result.rows[0];
+                res.send(createTemplate(projectData));
             }
         }  
         

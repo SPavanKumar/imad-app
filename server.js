@@ -118,7 +118,7 @@ function createTemplate(data) {
 
 
 
-app.get('Projects/:projectName',function (req, res) {
+app.get('/Projects/:projectName',function (req, res) {
   
     pool.query("SELECT * FROM project WHERE title = '" + req.params.ProjectName + "'",  function (err, result) {
         if (err) {

@@ -16,7 +16,7 @@ app.use(morgan('combined'));
 
 var Projects = {
          'project-one' :{  
-            title: 'ProRss',
+            title: 'Project-one',
             heading: '1.Fruits RSS',
             subheading:'Mobile app',
             date : 'aug12,15',
